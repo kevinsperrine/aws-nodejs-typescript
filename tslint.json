@@ -1,0 +1,10 @@
+{
+  "extends": ["tslint:latest", "tslint-config-prettier", "tslint-config-security"],
+  "linterOptions": {
+    "include": ["src/**/*"]
+  },
+  "rules": {
+    "no-implicit-dependencies": [true, ["aws-sdk", "aws-lambda"]],
+    "no-submodule-imports": [true, "aws-sdk", "source-map-support"]
+  }
+}
